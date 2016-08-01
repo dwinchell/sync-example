@@ -1,0 +1,26 @@
+<ion-view view-title="Users">
+  <ion-nav-buttons side="right">
+    <button class="button button-positive" ng-click="createUser()">
+      Add User
+    </button>
+  </ion-nav-buttons>
+
+  <ion-content>
+    <ion-list>
+      <ion-item class="item-remove-animate item-avatar item-icon-right" ng-repeat="(id, user) in users" type="item-text-wrap" href="#/tab/chats/{{chat.id}}">
+        <img ng-src="img/user.png">
+        <h2>{{user.data.firstname}} {{user.data.lastname}}</h2>
+        <p>Created: {{user.data.createTs}}</p>
+        <i class="icon ion-chevron-right icon-accessory"></i>
+
+        <ion-option-button class="button-positive" ng-click="editUser(user.data, id)">
+          Edit
+        </ion-option-button>
+
+        <ion-option-button class="button-assertive" ng-click="deleteUser(id)">
+          Delete
+        </ion-option-button>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>

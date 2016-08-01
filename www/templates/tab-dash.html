@@ -1,0 +1,27 @@
+<ion-view view-title="Dashboard">
+  <ion-content class="padding">
+    <!-- <p>
+      This is a sample application that demonstrates using FH.Sync and FH.Rest.
+    </p>
+    <p>
+      It enables you to CRUDL users from a backend data store.
+    </p> -->
+    <div class="card">
+      <div class="item item-text-wrap">
+        User Count: {{totalUsers}}
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="item item-text-wrap">
+        Last Sync to Cloud: {{latestSyncToCloud}}
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="item item-text-wrap">
+        Last Local Update: {{latestLocalUpdateTs}}
+      </div>
+    </div>
+  </ion-content>
+</ion-view>

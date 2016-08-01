@@ -1,0 +1,19 @@
+<ion-modal-view>
+  <ion-header-bar>
+    <h1 class="title">{{modalTitle}}</h1>
+  </ion-header-bar>
+
+  <ion-content>
+    <div class="list">
+      <label class="item item-input">
+        <input type="text" ng-model="workingUser.data.firstname" placeholder="First Name">
+      </label>
+      <label class="item item-input">
+        <input type="text" ng-model="workingUser.data.lastname" placeholder="Last Name">
+      </label>
+      <div class="padding">
+        <button class="button button-block button-positive" ng-click="modal.hide()">Submit</button>
+      </div>
+    </div>
+  </ion-content>
+</ion-modal-view>
