@@ -1,6 +1,6 @@
 
 angular.module('starter.constants', [])
   .constant('SYNC_DATASETS', [
-    'users'
+    'suggestions'
   ])
   .constant('SYNC_FREQUENCY', 30);
